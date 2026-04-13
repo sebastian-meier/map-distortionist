@@ -1,0 +1,61 @@
+:root {
+  --map-width: 1280px;
+  --map-height: 720px;
+  --perspective: 1200px;
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+  --rotate-z: 0deg;
+  --skew-x: 0deg;
+  --skew-y: 0deg;
+  --scale-x: 1;
+  --scale-y: 1;
+  --transform-origin: 50% 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+body {
+  overflow: hidden;
+}
+
+#stage {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #000;
+}
+
+#map-shell {
+  width: var(--map-width);
+  height: var(--map-height);
+  transform-origin: var(--transform-origin);
+  transform:
+    perspective(var(--perspective))
+    rotateX(var(--rotate-x))
+    rotateY(var(--rotate-y))
+    rotateZ(var(--rotate-z))
+    skewX(var(--skew-x))
+    skewY(var(--skew-y))
+    scale(var(--scale-x), var(--scale-y));
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.maplibregl-canvas {
+  background: #000;
+}
