@@ -50,10 +50,17 @@ body {
     scale(var(--scale-x), var(--scale-y));
 }
 
-#map {
+#map,
+#d3-map {
   width: 100%;
   height: 100%;
   background: #000;
+}
+
+#d3-map svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .maplibregl-canvas {

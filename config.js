@@ -18,8 +18,8 @@ window.APP_CONFIG = {
         }
       ]
     },
-    center: [13.405, 52.52],
-    zoom: 10
+    center: [13.059421290890569, 52.39922070744286],
+    zoom: 14
   },
   container: {
     width: 1280,
