@@ -51,10 +51,15 @@ body {
 }
 
 #map,
-#d3-map {
+#d3-map,
+#deck-map {
   width: 100%;
   height: 100%;
   background: #000;
+}
+
+#deck-map canvas {
+  display: block;
 }
 
 #d3-map svg {
